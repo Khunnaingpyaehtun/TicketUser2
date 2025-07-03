@@ -1,0 +1,12 @@
+# netlify.toml
+
+# This is the rewrite rule for the proxy
+[[redirects]]
+  # The path on your site that you will call from your JavaScript
+  from = "/api/*"
+
+  # The actual API endpoint you want to proxy to
+  to = "http://49b355f6fc8956c98c276eccfd35634e-527186654.ap-southeast-1.elb.amazonaws.com/api/:splat"
+
+  # This makes it a "rewrite" or "proxy" instead of a "redirect"
+  status = 200
