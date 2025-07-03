@@ -499,7 +499,7 @@
                                 return;
                         }
 
-                        const response = await fetch(`http://localhost:3000/api/seats/${cinemaCode}`);
+                        const response = await fetch(/api/seats/${cinemaCode}`);
                         if (!response.ok) {
                             throw new Error(`HTTP error! Status: ${response.status}`);
                         }
