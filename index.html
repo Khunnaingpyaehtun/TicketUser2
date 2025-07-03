@@ -221,7 +221,7 @@
                 <div class="space-y-4">
                     <button class="btn btn-secondary w-full text-lg" data-cinema="maesot">SF CINEMA (MAE SOT)</button>
                     <button class="btn btn-secondary w-full text-lg" data-cinema="chiangmai">SFX CINEMA (MAYA CHIANGMAI)</button>
-                    <button class="btn btn-secondary w-full text-lg" data-cinema="mbk">SF CINEMA (MBK CENTER)</button>
+                    <button class="btn btn-secondary w-full text-lg" data-cinema="mbk">SF CINEMA (MBK CENTER BANGKOK)</button>
                 </div>
             </div>
         </div>
@@ -295,6 +295,7 @@
                 </div>
 
                 <div class="text-center mt-6 bg-gray-900 p-4 rounded-lg">
+                    <p class="invisible">Avaliableဖြစ်သောခုံများ ဝယ်ယူနိုင်ပါသည်။<span id="totalPriceInfo"></span></p>
                     <a href="https://m.me/whathappenedtothewolf" target="_blank" id="confirmBookingBtn" class="btn btn-primary inline-flex items-center mt-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-messenger me-2" viewBox="0 0 16 16">
                             <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
@@ -306,7 +307,7 @@
                         click to copy info
                     </button>
 
-                    <p class="invisible">စုစုပေါင်းကျသင့်ငွေ: <span id="totalPriceInfo">0 Baht</span></p>
+                    
                     
                     
                 </div>
@@ -372,8 +373,8 @@
             const cinemaData = {
                  'maesot': {
                     name: 'SF CINEMA (MAE SOT)',
-                    time: '၁၉/၇/၂၀၂၅ ညနေ ၃:၀၀',
-                    prices: { n: 300, p: 500, s: 800 },
+                    time: '၁၉/၇/၂၀၂၅ ညနေ ၆:၀၀',
+                    prices: { n: 300, p: 450, s: 950 },
                     rowLabels: ["M", "L", "K", "J", "H", "G", "F", "E", "D", "C", "B", "A", "AA"],
                     layout: [
                         "____nnnnnnnnnnnnnnnn____",   // M: 22
@@ -394,7 +395,7 @@
                 'chiangmai': {
                     name: 'SFX CINEMA (MAYA CHIANGMAI)',
                     time: '၁၉/၇/၂၀၂၅ ညနေ ၆:၀၀',
-                    prices: { n: 300, p: 500, s: 800 },
+                    prices: { n: 350, p: 450, s: 1000 },
                     rowLabels: ["N", "M", "L", "K", "J", "H", "G", "F", "E", "D", "C", "B", "A", "AA"],
                     layout: [
                         "nnnnnnnnnnnnnnnnnnnnnnnn",  // N: 24
@@ -415,8 +416,8 @@
                 },
                 'mbk': {
                     name: 'SF CINEMA (MBK CENTER)',
-                    time: '၁၉/၇/၂၀၂၅ ညနေ ၄:၀၀',
-                    prices: { n: 300, p: 500, s: 800 },
+                    time: '၁၉/၇/၂၀၂၅ ညနေ ၆:၀၀',
+                    prices: { n: 400, p: 550, s: 1200 },
                     rowLabels: ["P", "N", "M", "L", "K", "J", "H", "G", "F", "E", "D", "C", "B", "A", "AA"],
                     layout: [
                         "nnnnnnnnnn_nnnnnnnnnn", // P: 20
